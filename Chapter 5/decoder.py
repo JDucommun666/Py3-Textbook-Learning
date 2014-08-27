@@ -9,11 +9,18 @@ def main():
     inString = input("Please enter the Unicode encoded message.")
 
     #Loop through each substring and build the Unicode message
-    message = ""
-    for numStr in inString.split():
-        codeNum = eval(numStr)      #Converts digits to a number
-        message = message + chr(codeNum)    #Concatenate char to msg
+    #message = ""
+    #for numStr in inString.split():
+    #   codeNum = eval(numStr)      #Converts digits to a number
+    #    message = message + chr(codeNum)    #Concatenate char to msg
 
+    #Loop through each substring and build Unicode message
+    chars = []
+    for numStr in inString.split():
+        codeNum = eval(numStr)      #Converts digits to number
+        chars.append(chr(codeNum))  #Accumulates new character
+
+    message = "".join(chars)
     print("\nThe decoded message is:", message)
 
 main()
