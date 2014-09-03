@@ -1,4 +1,4 @@
-__author__ = 'JDucommun'
+__author__ = 'JDucosmmun'
 
 def main():
     print("Welcome to convert.py!")
